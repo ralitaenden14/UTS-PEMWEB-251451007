@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop Web &amp; Flexbox Kampus - UTS Pemrograman Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Workshop Web &amp; Flexbox Kampus</h1>
+      <nav aria-label="Navigasi Utama" class="nav-menu">
+        <a href="#tentang">#tentang</a>
+        <a href="#rundown">#rundown</a>
+        <a href="#daftar">#daftar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section id="tentang" class="card tentang-section">
+      <div class="tentang-media">
+        <img src="images/kegiatan.jpg" alt="Suasana mahasiswa berdiskusi saat kegiatan workshop kampus">
+      </div>
+      <div class="tentang-body">
+        <h2>Tentang Kegiatan</h2>
+        <p>
+          Kegiatan ini dirancang untuk melatih pembuatan halaman web semantik dan tata letak
+          <strong>CSS Flexbox</strong> yang <em>rapi, simpel, dan estetis</em> bagi mahasiswa.
+        </p>
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout" target="_blank" rel="noreferrer">
+            Panduan Resmi CSS Flexible Box Layout di MDN
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section id="rundown" class="rundown-section">
+      <div class="card rundown-box">
+        <h2>Syarat Peserta</h2>
+        <ul>
+          <li>Terdaftar aktif sebagai mahasiswa pada program studi terkait.</li>
+          <li>Membawa laptop dengan browser modern dan editor kode terpasang.</li>
+        </ul>
+      </div>
+
+      <div class="card rundown-box">
+        <h2>Alur Pendaftaran</h2>
+        <ol>
+          <li>Isi data identitas dan pilihan divisi pada formulir pendaftaran.</li>
+          <li>Verifikasi kelengkapan data oleh panitia kegiatan.</li>
+          <li>Kirim formulir dan simpan bukti pendaftaran peserta.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="daftar" class="card daftar-section">
+      <h2>Formulir Pendaftaran</h2>
+      <form action="#" method="post" class="signup-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="nama">Nama Lengkap</label>
+            <input id="nama" name="nama" type="text" required>
+          </div>
+
+          <div class="form-field">
+            <label for="surel">Surel (Email)</label>
+            <input id="surel" name="surel" type="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="tanggal-lahir">Tanggal Lahir</label>
+            <input id="tanggal-lahir" name="tanggal_lahir" type="date" required>
+          </div>
+
+          <div class="form-field">
+            <label for="divisi">Pilihan Divisi</label>
+            <select id="divisi" name="divisi" required>
+              <option value="">-- Pilih Divisi --</option>
+              <option value="frontend">Frontend &amp; UI</option>
+              <option value="konten">Konten &amp; Dokumentasi</option>
+              <option value="acara">Acara &amp; Humas</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-check">
+          <input id="persetujuan" name="persetujuan" type="checkbox" required>
+          <label for="persetujuan">Saya menyetujui ketentuan dan tata tertib kegiatan</label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Kirim Pendaftaran</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Pemrograman Web &middot; Informasi Panitia Kegiatan</p>
+    </div>
+  </footer>
+</body>
+</html>
